@@ -120,22 +120,33 @@
 
     <footer>
         <p><strong>Clínica Vida & Saúde</strong></p>
-        <p>SHLS Quadra 716 - Asa Sul, Brasília - DF</p>
-        <p>Telefone: (61) 3333-0000</p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0.9rem; opacity: 0.9; margin: 20px 0;">
+            <div>
+                <strong>Asa Sul</strong><br>
+                SHLS Quadra 716 - Ed. Centro Clínico Sul
+            </div>
+            <div>
+                <strong>Asa Norte</strong><br>
+                SHLN Conjunto B - Setor Hospitalar Norte
+            </div>
+            <div>
+                <strong>Águas Claras</strong><br>
+                Rua das Pitangueiras - Próximo ao Shopping Quê
+            </div>
+            <div>
+                <strong>Taguatinga</strong><br>
+                C 12 - Centro de Taguatinga
+            </div>
+        </div>
+
+        <p class="contato-footer">📞 Central de Agendamento: (61) 3333-0000</p>
+        <p>Brasília - Distrito Federal</p>
+        
         <div style="margin-top: 20px; font-size: 20px;">
             <i class="fab fa-instagram" style="margin: 0 10px;"></i>
             <i class="fab fa-facebook" style="margin: 0 10px;"></i>
         </div>
+        <hr style="width: 50px; border: 0.5px solid #444; margin: 20px auto;">
+        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Clínica Vida & Saúde. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        document.getElementById('formClinica').addEventListener('submit', function(e) {
-            e.preventDefault();
-            document.getElementById('formClinica').style.display = 'none';
-            document.getElementById('mensagem-sucesso').style.display = 'block';
-            window.scrollTo({ top: document.getElementById('contato').offsetTop, behavior: 'smooth' });
-        });
-    </script>
-
-</body>
-</html>
